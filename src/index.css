@@ -1,0 +1,152 @@
+/* Reset and base styling */
+body {
+  margin: 0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Theme support */
+.light {
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.dark {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.dark .container {
+  background-color: #2b2b2b;
+  color: #f5f5f5;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/* Input */
+input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  margin-right: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Buttons */
+button {
+  padding: 10px 14px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2b67f6;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #1f4ac9;
+}
+
+/* Task list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f3f3;
+  margin: 8px 0;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+li {
+  background: #f3f3f3;
+  color: #000;
+}
+
+li button {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+li button:hover {
+  background-color: #c0392b;
+}
+
+.dark li {
+  background: #444;
+  color: #f5f5f5;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: green;
+  font-weight: bold;
+}
+
+.filter-buttons {
+  margin-top: 10px;
+}
+
+.filter-buttons button {
+  background-color: #ccc;
+  color: #000;
+}
+
+.filter-buttons button.active {
+  background-color: #2b67f6;
+  color: #fff;
+}
+
+/* Completed task styles */
+li.completed {
+  background-color: #d4edda; /* soft green background */
+  color: #155724; /* dark green text for contrast */
+  font-weight: bold;
+}
+
+.dark li.completed {
+  background-color: #225d32; /* darker green for dark mode */
+  color: #c2f0c2;
+}
+
+.light {
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.dark {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.dark .container {
+  background-color: #2b2b2b;
+}
+
+.light .container {
+  background-color: #ffffff;
+}
